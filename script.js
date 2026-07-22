@@ -14,7 +14,7 @@ customerButton.addEventListener("click", function () {
 
     // Change the text displayed on the web page.
     storeMessage.textContent =
-        "Welcome! Please speak to a sales consultant if you need assistance.";
+        "Hi nice to meet you! Please speak to a sales consultant if you need assistance.";
 
     // Display a browser popup.
     alert("Thank you for visiting Lewis Furniture Store.");
