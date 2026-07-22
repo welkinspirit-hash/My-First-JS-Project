@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eef1f5;
+    color: #1f2937;
+}
+
+.page-card {
+    width: 90%;
+    max-width: 650px;
+    margin: 60px auto;
+    padding: 32px;
+    background-color: white;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    color: #b22025;
+}
+
+p {
+    line-height: 1.6;
+}
+
+button {
+    margin-top: 16px;
+    padding: 12px 20px;
+    background-color: #b22025;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8f1a1f;
+}
+
+
+/* This class will only be applied after the button is clicked */
+.dark-theme {
+    background-color: #1f2937;
+    color: white;
+}
