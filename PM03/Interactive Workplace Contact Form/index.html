@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workplace Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Workplace Contact Form</h1>
+
+        <form id="contactForm">
+
+            <label for="name">Name</label>
+            <input type="text" id="name">
+
+            <label for="department">Department</label>
+            <input type="text" id="department">
+
+            <label for="email">Email</label>
+            <input type="text" id="email">
+
+            <label for="category">Issue Category</label>
+            <select id="category">
+                <option value="">Select an issue</option>
+                <option value="Software">Software</option>
+                <option value="Hardware">Hardware</option>
+                <option value="Network">Network</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message"></textarea>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+        <p id="errorMessage"></p>
+        <p id="successMessage"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
