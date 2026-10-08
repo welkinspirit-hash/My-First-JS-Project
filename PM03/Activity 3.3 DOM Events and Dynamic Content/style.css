@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode styles toggled by JavaScript */
+body.dark-theme {
+    background-color: #1e1e24;
+    color: #fff;
+}
+
+.container {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 350px;
+}
+
+body.dark-theme .container {
+    background: #2d2d34;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+form {
+    display: flex;
+    margin: 20px 0;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#theme-btn {
+    background-color: #007bff;
+    margin-left: 0;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid #28a745;
+}
+
+body.dark-theme li {
+    background: #3a3a42;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+
+.api-section {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px dashed #ccc;
+}
+
+.status-msg {
+    margin: 15px 0;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.status-msg.error {
+    color: #dc3545;
+    background: #f8d7da;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.user-card {
+    background: #f0f0f5;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 15px;
+    border-left: 5px solid #007bff;
+}
+
+body.dark-theme .user-card {
+    background: #3a3a42;
+    border-left-color: #007bff;
+}
+
+#error-btn {
+    background-color: #6c757d;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Shopping List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+                <!-- API Section (Activity 3.4) -->
+        <div class="api-section">
+            <h2>Live User Profile</h2>
+            <button id="fetch-btn">Fetch User Data</button>
+            <button id="error-btn" class="delete-btn">Simulate Error</button>
+            
+            <!-- Loading, Data, and Error Container -->
+            <div id="api-status" class="status-msg"></div>
+            <div id="user-card" class="user-card" style="display: none;">
+                <p><strong>Name:</strong> <span id="user-name"></span></p>
+                <p><strong>Email:</strong> <span id="user-email"></span></p>
+                <p><strong>Company:</strong> <span id="user-company"></span></p>
+            </div>
+        </div>
+
+        <h1>Dynamic Shopping List</h1>
+        
+        <!-- Theme Toggle Button (Style Change Event) -->
+        <button id="theme-btn">Switch to Dark Mode</button>
+
+        <!-- Form for Input (Form Event & PreventDefault) -->
+        <form id="item-form">
+            <input type="text" id="item-input" placeholder="Enter an item..." required>
+            <button type="submit">Add Item</button>
+        </form>
+
+        <!-- Dynamic List Container (Add/Remove Items) -->
+        <ul id="shopping-list">
+            <!-- Items will appear here dynamically via JS -->
+        </ul>
+    </div>
+
+ 
+
+    <    <!-- Add ?v=1 to the end of app.js. This forces the browser to bypass its cache! -->
+    <script src="app.js?v=1"></script>
+</body>
+</html>
