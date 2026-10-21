@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>Cyber Security Awareness Quiz</title>
+ <link rel="icon" type="image/x-icon" href="Images/QL.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         LOGIN SCREEN
+    ====================================================== -->
+
+    <section id="loginScreen" class="screen">
+        <div class="login-container">
+
+            <div class="logo">
+                🛡️
+            </div>
+
+            <p class="small-heading">
+                CYBER SECURITY
+            </p>
+
+            <h1>
+                Awareness Quiz
+            </h1>
+
+            <p class="welcome-text">
+                Empowering users with the knowledge and awareness required to maintain a secure digital workplace.
+            </p>
+
+
+            <form id="loginForm">
+
+                <div class="input-group">
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="department">
+                        Department
+                    </label>
+
+                    <input
+                        type="text"
+                        id="department"
+                        placeholder="Enter your department"
+                        required
+                    >
+
+                </div>
+
+<div class="input-group">
+
+    <label for="securityCheck">
+        Which password is strongest?
+    </label>
+
+    <select id="securityCheck" required>
+
+        <option value="">
+            Select Answer
+        </option>
+
+        <option value="weak">
+            password123
+        </option>
+
+        <option value="weak">
+            qwerty2024
+        </option>
+
+        <option value="strong">
+            CybEr#2o26!S@fe
+        </option>
+
+    </select>
+<p id="securityError"></p>
+
+</div>
+
+
+                <button
+                    type="submit"
+                    class="primary-btn"
+                >
+                    Start Awareness Quiz
+                </button>
+
+            </form>
+
+
+            <p class="security-note">
+                🔒 Training progress is securely stored.
+            </p>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>

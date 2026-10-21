@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate of Completion</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="certificate-actions">
+
+    <button
+        class="printbtn"
+        onclick="window.print()"
+    >
+        🖨 Print
+    </button>
+
+    <button
+        class="printbtn"
+        onclick="window.location.href='dashboard.html'"
+    >
+        🏠 Dashboard
+    </button>
+
+</div>
+
+    <div class="certificate">
+
+        <h1>Certificate of Compliance</h1>
+
+        <p>This certificate is proudly presented to</p>
+
+        <h2 id="certificateName">
+            Participant Name
+        </h2>
+
+        <p>For successfully completing the</p>
+
+        <h3>Cyber Security Awareness Quiz</h3>
+
+        <p>
+            Department:
+            <span id="certificateDepartment"></span>
+        </p>
+
+        <p>
+            Security Level:
+            <span id="certificateLevel"></span>
+        </p>
+
+        <p>
+            Score:
+            <span id="certificateScore"></span>
+        </p>
+        <p>
+            Date of Completion:
+            <span id="certificateDate"></span>
+        </p>
+
+<div class="certificate-signature">
+
+    <div class="signature-block">
+
+        <div class="signature-line"></div>
+
+        <p>Modern Workplace Engineer</p>
+
+    </div>
+
+    <div class="signature-block">
+
+        <div class="signature-line"></div>
+
+        <p>Participant</p>
+
+    </div>
+
+</div>
+
+
+
+
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
