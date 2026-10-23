@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>Cyber Security Awareness Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         LOGIN SCREEN
+    ====================================================== -->
+
+    <section id="loginScreen" class="screen">
+        <div class="login-container">
+
+            <div class="logo">
+                🛡️
+            </div>
+
+            <p class="small-heading">
+                CYBER SECURITY
+            </p>
+
+            <h1>
+                Awareness Quiz
+            </h1>
+
+            <p class="welcome-text">
+                Test your cyber security knowledge and learn
+                how to stay safe online.
+            </p>
+
+
+            <form id="loginForm">
+
+                <div class="input-group">
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="department">
+                        Department
+                    </label>
+
+                    <input
+                        type="text"
+                        id="department"
+                        placeholder="Enter your department"
+                        required
+                    >
+
+                </div>
+
+                <div class="input-group">
+
+                    <!-- <label for="email">
+                        Email Address
+                    </label> -->
+
+                    <!-- <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                    > -->
+
+                </div>        
+ <!-- =====================================================
+         Quiz Category Selection
+    ====================================================== -->
+        <div class="input-group">
+
+            <label for="quizCategory">
+                Quiz Category
+    </label>
+
+        <select id="quizCategory" required>
+
+        <option value="">
+            Select a category
+        </option>
+
+        <option value="Phishing Awareness">
+            Phishing Awareness
+        </option>
+
+        <option value="Password Security">
+            Password Security
+        </option>
+
+        <option value="Social Engineering">
+            Social Engineering
+        </option>
+
+        <option value="Data Protection">
+            Data Protection
+        </option>
+
+    </select>
+
+</div>
+                <button
+                    type="submit"
+                    class="primary-btn"
+                >
+                    Start Awareness Quiz
+                </button>
+
+            </form>
+
+
+            <p class="security-note">
+                🔒 Training progress is securely stored.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         DASHBOARD SCREEN
+    ====================================================== -->
+
+    <section
+        id="dashboardScreen"
+        class="screen hidden"
+    >
+
+        <div class="page-wrapper">
+
+            <header class="dashboard-header">
+
+                <div>
+
+                    <p class="small-heading">
+                        CYBER SECURITY AWARENESS
+                    </p>
+
+                    <h1 id="welcomeMessage">
+                        Welcome
+                    </h1>
+
+                    <p
+                        id="departmentMessage"
+                        class="department-text"
+                    >
+                        Department
+                    </p>
+                    <!-- View Certificate Button -->
+<button id="certificateBtn">
+
+    View Certificate
+
+</button>
+
+                </div>
+
+
+                <div class="shield-icon">
+                    🛡️ 
+                </div>
+
+            </header>
+
+
+            <section class="intro-section">
+
+                <div>
+
+                    <h2>
+                        Security Dashboard
+                    </h2>
+
+                    <p>
+                        Track your cyber security awareness progress.
+                    </p>
+
+                </div>
+
+                <div class="status-badge">
+                    ● Security Training
+                </div>
+
+            </section>
+
+
+            <!-- Dashboard Cards -->
+
+            <section class="card-container">
+
+
+                <!-- Level -->
+
+                <div class="card">
+
+                    <div class="card-icon level-icon">
+                        🏆
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Current Level
+                        </h3>
+
+                        <p id="currentLevel">
+                            Not Started
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Score -->
+
+                <div class="card">
+
+                    <div class="card-icon score-icon">
+                        🎯
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Score
+                        </h3>
+
+                        <p id="scoreDisplay">
+                            0 / 5
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Status -->
+
+                <div class="card">
+
+                    <div class="card-icon status-icon">
+                        🔐
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Quiz Status
+                        </h3>
+
+                        <p id="quizStatus">
+                            Not Started
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Start Quiz -->
+
+            <section class="start-section">
+
+                <div class="start-icon">
+                    🚀
+                </div>
+
+                <h2>
+                    Ready to test your knowledge?
+                </h2>
+
+                <p>
+                    Complete the cyber security awareness quiz
+                    and see how well you understand common
+                    security threats.
+                </p>
+
+                <button
+                    id="startQuizBtn"
+                    class="primary-btn"
+                >
+                    Start Phishing Quiz
+                </button>
+
+            </section>
+
+
+            <footer>
+
+                <p>
+                    Cyber Security Awareness Portal
+                </p>
+
+                <span>
+                    Stay alert. Stay secure.
+                </span>
+
+            </footer>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         QUIZ SCREEN
+    ====================================================== -->
+
+    <section
+        id="quizScreen"
+        class="screen hidden"
+    >
+
+        <main class="quiz-container">
+
+
+            <!-- Quiz Header -->
+
+            <div class="quiz-header">
+
+                <div>
+
+                    <p class="small-heading">
+                        CYBER SECURITY AWARENESS
+                    </p>
+
+                    <h1>
+                        Security Knowledge Check
+                    </h1>
+
+                </div>
+
+                <div class="quiz-icon">
+                    🛡️
+                </div>
+
+            </div>
+
+
+            <!-- Progress -->
+
+            <div class="progress-section">
+
+                <div class="progress-info">
+
+                    <span id="questionNumber">
+                        Question 1 of 5
+                    </span>
+
+                    <span id="progressPercent">
+                        20%
+                    </span>
+
+                </div>
+
+
+                <div class="progress-bar">
+
+                    <div
+                        id="progressFill"
+                        class="progress-fill"
+                    ></div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Question -->
+
+            <div class="question-card">
+
+                <span class="question-label">
+                    QUESTION
+                </span>
+
+                <h2 id="question">
+                    Question goes here
+                </h2>
+
+            </div>
+
+
+            <!-- Answers -->
+
+            <div class="answers">
+
+                <button
+                    id="answer0"
+                    class="answer-btn"
+                >
+                    Answer 1
+                </button>
+
+                <button
+                    id="answer1"
+                    class="answer-btn"
+                >
+                    Answer 2
+                </button>
+
+                <button
+                    id="answer2"
+                    class="answer-btn"
+                >
+                    Answer 3
+                </button>
+
+                <button
+                    id="answer3"
+                    class="answer-btn"
+                >
+                    Answer 4
+                </button>
+
+            </div>
+
+
+            <!-- Feedback -->
+
+            <div
+                id="feedback"
+                class="feedback"
+            ></div>
+
+
+        </main>
+
+    </section>
+
+
+    <!-- =====================================================
+         RESULTS SCREEN
+    ====================================================== -->
+
+    <section
+        id="resultsScreen"
+        class="screen hidden"
+    >
+
+        <main class="results-container">
+
+            <div class="results-icon">
+                🏆
+            </div>
+
+            <p class="small-heading">
+                QUIZ COMPLETE
+            </p>
+
+            <h1>
+                Your Results
+            </h1>
+
+            <p class="results-message">
+                Well done! Here is your cyber security
+                awareness result.
+            </p>
+
+
+            <!-- Score -->
+
+            <div class="score-circle">
+
+                <span id="finalScore">
+                    0 / 5
+                </span>
+
+            </div>
+
+
+            <!-- Level -->
+
+            <div class="level-result">
+
+                <p>
+                    Security Level
+                </p>
+
+                <h2 id="level">
+                    Cyber Cadet
+                </h2>
+
+            </div>
+
+
+            <button
+                id="dashboardBtn"
+                class="primary-btn"
+            >
+                Return to Dashboard
+            </button>
+
+
+
+        </main>
+
+    </section>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

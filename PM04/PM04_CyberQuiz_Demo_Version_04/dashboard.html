@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+<!-- Connect our CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+<!-- welcome message from dashboard.js -->
+        <h1 id="welcomeMessage">
+            Welcome
+        </h1>
+<!-- department from dashboard.js -->
+        <p id="departmentMessage">
+            Department
+        </p>
+ 
+<!-- Container holding all cards -->
+<div class="card-container">
+
+<!-- Current Level Card -->
+    <div class="card">
+        <h3>Current Level</h3>
+        <p id="currentLevel">Not Started</p>
+    </div>
+
+<!-- Score Card -->
+    <div class="card">
+        <h3>Score</h3>
+        <p id="scoreDisplay">0 Points</p>
+    </div>
+
+<!-- Quiz Status Card -->
+    <div class="card">
+        <h3>Quiz Status</h3>
+        <p id="quizStatus">Not Started</p>
+    </div>
+
+</div>
+
+<!-- Start Quiz Button -->
+<button id="startQuizBtn">
+    Start Phishing Quiz
+</button>
+
+    </div>
+    
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>

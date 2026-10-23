@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>Cyber Security Awareness Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         LOGIN SCREEN
+    ====================================================== -->
+
+    <section id="loginScreen" class="screen">
+        <div class="login-container">
+
+            <div class="logo">
+                🛡️
+            </div>
+
+            <p class="small-heading">
+                CYBER SECURITY
+            </p>
+
+            <h1>
+                Awareness Quiz
+            </h1>
+
+            <p class="welcome-text">
+                Test your cyber security knowledge and learn
+                how to stay safe online.
+            </p>
+
+
+            <form id="loginForm">
+
+                <div class="input-group">
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="department">
+                        Department
+                    </label>
+
+                    <input
+                        type="text"
+                        id="department"
+                        placeholder="Enter your department"
+                        required
+                    >
+
+                </div>
+
+                
+ <!-- =====================================================
+         Quiz Category Selection
+    ====================================================== -->
+        <div class="input-group">
+
+            <label for="quizCategory">
+                Quiz Category
+    </label>
+
+        <select id="quizCategory" required>
+
+        <option value="">
+            Select a category
+        </option>
+
+        <option value="Phishing Awareness">
+            Phishing Awareness
+        </option>
+
+        <option value="Password Security">
+            Password Security
+        </option>
+
+        <option value="Social Engineering">
+            Social Engineering
+        </option>
+
+        <option value="Data Protection">
+            Data Protection
+        </option>
+
+    </select>
+
+</div>
+                <button
+                    type="submit"
+                    class="primary-btn"
+                >
+                    Start Awareness Quiz
+                </button>
+
+            </form>
+
+
+            <p class="security-note">
+                🔒 Training progress is securely stored.
+            </p>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Awareness Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <p class="welcome-text">Test your cyber security knowledge.</p>
+        <h1>🛡️ Cyber Security Awareness Quiz</h1>
+        <p>Test your cyber security knowledge.</p>
+
+        <form id="quizForm">
+
+            <div class="question">
+                <h3>1. What is phishing?</h3>
+                <label><input type="radio" name="q1" value="0"> A software update</label>
+                <label><input type="radio" name="q1" value="1"> A fraudulent attempt to steal information</label>
+                <label><input type="radio" name="q1" value="0"> A type of antivirus</label>
+            </div>
+
+            <div class="question">
+                <h3>2. Which password is strongest?</h3>
+                <label><input type="radio" name="q2" value="0"> Password123</label>
+                <label><input type="radio" name="q2" value="0"> Welcome1</label>
+                <label><input type="radio" name="q2" value="1"> T!m3$7ar#2026</label>
+            </div>
+
+            <div class="question">
+                <h3>3. What does MFA stand for?</h3>
+                <label><input type="radio" name="q3" value="1"> Multi-Factor Authentication</label>
+                <label><input type="radio" name="q3" value="0"> Multiple File Access</label>
+                <label><input type="radio" name="q3" value="0"> Managed Firewall Access</label>
+            </div>
+
+            <div class="question">
+                <h3>4. Should you share your password with IT?</h3>
+                <label><input type="radio" name="q4" value="0"> Yes</label>
+                <label><input type="radio" name="q4" value="1"> No</label>
+            </div>
+
+            <div class="question">
+                <h3>5. What should you do if you suspect malware?</h3>
+                <label><input type="radio" name="q5" value="1"> Report it to IT immediately</label>
+                <label><input type="radio" name="q5" value="0"> Ignore it</label>
+                <label><input type="radio" name="q5" value="0"> Continue working normally</label>
+            </div>
+
+    <button type="button" onclick="window.location.href='Page1.html'">
+        Next
+    </button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
